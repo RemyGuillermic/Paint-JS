@@ -1,0 +1,25 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+	text-align: center;
+}
+
+ #tools, #autre{
+ 	display: flex;
+ 	padding: 15px;
+ }
+
+ #outils * , #autre*{
+ 	/*display: inline;*/
+ 	padding: 15px;
+ }
+
+ #right label{
+ 	padding-left: 18px;
+ }
+
+ a{
+ 	text-decoration: none;
+ }

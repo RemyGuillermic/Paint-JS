@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My paint</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+
+</head>
+<body>
+
+    <header>
+        <h1>Paint</h1>
+    </header>
+
+    <main>
+        <div id="tools">
+            <div class="row">
+                <div class="col s12">
+                    <ul class="tabs">
+                        <li class="tab col s3"><a href="#style">Style</a></li>
+                        <li class="tab col s3"><a class="active" href="#outils">Outils</a></li>
+                        <li class="tab col s3"><a href="#autre">Autre</a></li>
+                    </ul>
+                </div>
+
+                <div id="style" class="col s12">
+                    <i class="material-icons">color_lens</i>
+                    <input type="color" />
+                    <i class="material-icons">settings_ethernet</i>
+                    <input type="range" min="1" max="100" />
+                </div>
+
+                <div id="outils" class="col s12">
+                    <input id="pen" type="radio" name="tools">
+                    <label for="pen" class="active" >Pen: <i class="material-icons">brush</i></label>
+
+                    <i class="material-icons">format_color_reset</i>
+
+                    <input id="rubber" type="radio" name="tools">
+                    <label for="rubber">Gomme: </label>
+                    <i class="material-icons">timeline</i>
+
+                    <label for="line">Ligne: </label>
+                    <input id="line" type="radio" name="tools">
+                    <i class="material-icons">crop_5_4</i>
+                    <label for="rect">Rectangle: </label>
+                    <input id="rect" type="radio" name="tools">
+                    <i class="material-icons">radio_button_unchecked</i>
+                    <label for="arc">Cercle:   </label>
+                    <input id="arc" type="radio" name="tools">
+                </div>
+
+                <div id="autre" class="col s12">
+                    <i class="material-icons">highlight_off</i>
+
+                    <input id="reset" type="button" value="Reset">
+                    <i class="material-icons">file_download</i>
+
+                    <a href="#" id="download"><input id="dl" type="button" value="Téléchargement"></a>
+                    <i class="material-icons">hdr_strong</i>
+                    <div class="switch">
+                        <label>
+                            Vide
+                            <input type="checkbox" id="full" value="plein">
+                            <span class="lever"></span>
+                            Plein
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <canvas class="col offset-s2" id="paint" width="1000" height="800" style="border:1px solid;"></canvas>
+    </div>
+</main>
+
+<footer>
+
+
+
+</footer>
+
+</body>
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
